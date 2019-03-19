@@ -4,7 +4,7 @@ var ii = 1;
 var currentIndex =0;
 
 function callPhone(){
-	$("#callContactId").attr("href","tel"+contatcList[currentIndex].phone);
+	$("#callContactId").attr("href","tel:"+contatcList[currentIndex].phone);
 }
 function saveSession(){
 	localStorage.setItem("list",JSON.stringify(contatcList));
@@ -75,7 +75,7 @@ function homePage() {
         var $cell = $("<li></li>");
 		var $cellLink = $('<a href="#contactInformation" class="ui-btn ui-shadow ui-corner-all">');
 		var $cellButton =$('<a  class="ui-btn ui-shadow ui-btn-icon-notext ui-btn-inline ui-corner-all ui-icon-phone">');
-		$cellButton.attr("href","tel"+contatcList[key].phone);
+		$cellButton.attr("href","tel:"+contatcList[key].phone);
         var $cellImage = $('<img alt="" class="ui-corner-all"src=\"'+imageSrc+'\"style="width: 20%;">');
         $cellLink.attr("href","#contactInformation")
         var $cellLabel = $('<lable><b> '+value.name+'<b></lable>');
