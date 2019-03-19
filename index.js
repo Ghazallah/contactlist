@@ -1,6 +1,5 @@
 var contatcList = [];
 var flag;
-var ii = 1;
 var currentIndex =0;
 
 function callPhone(){
@@ -21,7 +20,6 @@ function getSession(){
 }
 
    function addContact(){
-	   console.log(ii++);
         flag =true;
         addNewContact();
    }
@@ -101,7 +99,7 @@ function homePage() {
 
         $cell.bind ("click",function (){
             var index = key;
-			 console.log(ii++);
+			 
             onContactItemClicked(index);  
        });
        
